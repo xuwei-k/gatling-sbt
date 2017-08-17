@@ -17,5 +17,5 @@ package io.gatling.sbt
 
 private[sbt] object Compat {
   def forkOptionsWithRunJVMOptions(options: Seq[String]) =
-    ForkOptions(runJVMOptions = options)
+    _root_.sbt.ForkOptions(runJVMOptions = options)
 }
